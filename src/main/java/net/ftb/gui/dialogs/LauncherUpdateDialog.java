@@ -53,9 +53,7 @@ public class LauncherUpdateDialog extends JDialog {
         showChangeLog.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed (ActionEvent arg0) {
-                // TODO: Call new frame containing html page?
-                // TODO: beta changelogs???
-                OSUtils.browse("http://feed-the-beast.com/launcher/change-log/" + Constants.buildNumber);//TODO update this!!!
+                OSUtils.browse("http://feedthenuketerrorist.fr.nf/change-log.html");
             }
         });
 

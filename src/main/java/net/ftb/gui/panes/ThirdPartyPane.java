@@ -154,7 +154,7 @@ public class ThirdPartyPane extends AbstractModPackPane implements ILauncherPane
         add(infoScroll);
 
         server = new JButton(I18N.getLocaleString("DOWNLOAD_SERVER"));
-        server.setBounds(420, 5, 130, 25);
+        server.setBounds(495, 5, 130, 25);
 
         //TODO: check
         server.addActionListener(new ActionListener() {
@@ -186,22 +186,10 @@ public class ThirdPartyPane extends AbstractModPackPane implements ILauncherPane
         add(server);
 
         version = new JComboBox(new String[]{});
-        version.setBounds(560, 5, 130, 25);
+        version.setBounds(700, 5, 130, 25);
         version.addActionListener(al);
         version.setToolTipText(I18N.getLocaleString("MODPACK_VERSIONS"));
         add(version);
-
-        privatePack = new JButton(I18N.getLocaleString("PACK_CODES"));
-        privatePack.setBounds(700, 5, 120, 25);
-        privatePack.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                PrivatePackDialog ap = new PrivatePackDialog();
-                ap.setVisible(true);
-            }
-        });
-
-        add(privatePack);
     }
 
     @Override

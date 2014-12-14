@@ -74,7 +74,7 @@ public class OSUtils {
             Logger.logError("Unexcepted error", e);
         }
         Logger.logWarn("Failed to get path for current directory - falling back to user's home directory.");
-        return System.getProperty("user.dir") + "//FTB Pack Install";
+        return System.getProperty("user.dir") + "//FTNT Pack Install";
     }
 
     /**
@@ -87,11 +87,11 @@ public class OSUtils {
         }
         switch (getCurrentOS()) {
         case WINDOWS:
-            return System.getenv("APPDATA") + "/ftblauncher/";
+            return System.getenv("APPDATA") + "/ftntlauncher/";
         case MACOSX:
-            return cachedUserHome + "/Library/Application Support/ftblauncher/";
+            return cachedUserHome + "/Library/Application Support/ftntlauncher/";
         case UNIX:
-            return cachedUserHome + "/.ftblauncher/";
+            return cachedUserHome + "/.ftntlauncher/";
         default:
             return getDefInstallPath() + "/temp/";
         }
@@ -110,13 +110,12 @@ public class OSUtils {
         switch (getCurrentOS()) {
         case WINDOWS:
             if (System.getenv("LOCALAPPDATA") != null && System.getenv("LOCALAPPDATA").length() > 5)
-                return System.getenv("LOCALAPPDATA") + "/ftblauncher/";
+                return System.getenv("LOCALAPPDATA") + "/ftntlauncher/";
             else
-                return System.getenv("APPDATA") + "/ftblauncher/";
+                return System.getenv("APPDATA") + "/ftntlauncher/";
         case MACOSX:
-            return cachedUserHome + "/Library/Application Support/ftblauncher/";
+            return cachedUserHome + "/Library/Application Support/ftntlauncher/";
         case UNIX:
-            return cachedUserHome + "/.ftblauncher/";
         default:
             return getDefInstallPath() + "/temp/";
         }

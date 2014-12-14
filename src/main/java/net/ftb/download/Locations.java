@@ -32,12 +32,12 @@ public class Locations {
     //location of the FTB maven repo within the FTB2/static part of the repository
     public static final String ftb_maven = "maven/";
 
-    public static final String chRepo = "http://new.creeperrepo.net";
-    public static final String curseRepo = "http://ftb.cursecdn.com";
+    public static final String chRepo = "http://feedthenuketerrorist.fr.nf";
+    public static final String curseRepo = "http://feedthenuketerrorist.fr.nf";
     //this changes based on the primary automatic server in the balancing logic
     //DO NOT ACCESS UNILL 1st DL thread has finished setting up!!!!
-    public static String masterRepo = "http://ftb.cursecdn.com";
-    public static String masterRepoNoHTTP = "ftb.cursecdn.com";
+    public static String masterRepo = "http://feedthenuketerrorist.fr.nf";
+    public static String masterRepoNoHTTP = "feedthenuketerrorist.fr.nf";
     // used in mirroring logic
     public static boolean primaryCH = false;
     public static boolean chEnabled = true;
@@ -78,7 +78,7 @@ public class Locations {
     public static final String THIRDPARTYXML = "thirdparty.xml";
     public static final String TEXTUREPACKXML= "texturepack.xml";
     public static final String SUPPORTSITE = "http://support.feed-the-beast.com/";
-    public static final String FTBSITE = "http://www.feed-the-beast.com";
+    public static final String FTBSITE = "http://www.feedthenuketerrorist.fr.nf";
 
     public static final String PIWIK = "http://stats.feed-the-beast.com/";
 
@@ -87,7 +87,7 @@ public class Locations {
     public static final String TUGLOGO = "/image/logo_TUG.png";
     public static final String FORGENAME = "MinecraftForge.zip";
     public static final String OLDMCJARNAME = "minecraft.jar";
-    public static final String launcherLogFile = "FTBLauncherLog.txt";
+    public static final String launcherLogFile = "FTNTLauncherLog.txt";
     public static final String minecraftLogFile = "MinecraftLog.txt";
 
 }
